@@ -81,16 +81,16 @@ Across large-scale heterogeneous topologies derived from real-world traces, Topo
 
 ---
 
-## Dataset: Edge-Cloud MoE Bench
+## Dataset: Edge-Cloud Bench
 
-We introduce a high-fidelity benchmark dataset for edge-cloud MoE inference scheduling. 
+We introduce a high-fidelity benchmark dataset for edge-cloud inference scheduling. 
 
 ### Why this dataset is valuable?
 Unlike synthetic traces used in prior works, this dataset captures the complexity of real-world edge computing:
 1.  **Heterogeneity**: Diverse server compute capabilities and cost models.
 2.  **Geo-Distribution**: Latency based on physical distance (Haversine formula).
 3.  **Adversarial "Traps"**: Specific network links exhibit stochastic high latency/packet loss, simulating real-world network jitter. This is critical for testing robustness.
-4.  **MoE Workflows**: Tasks require sequential processing by specific expert models distributed across the topology.
+4.  **Workflows**: Tasks require sequential processing by specific expert models distributed across the topology.
 
 ### Availability
 We provide the **`Server1_Trap` (500 servers)** scale as a sample for reproducibility.
