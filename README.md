@@ -132,6 +132,102 @@ Our method consistently outperforms baselines in terms of reward, latency, and c
 
 ---
 
+## Acknowledgements & References
+
+This repository is **inspired by** (and in some components may adapt design ideas from) the following representative works.  
+Unless explicitly stated, this project is an **independent implementation** and is **not affiliated with** the original authors.
+
+### Scheduling / Multi-cloud / SAGIN
+- **A3C-based workflow scheduling (multi-cloud)**: Tang *et al.* “Workflow scheduling based on asynchronous advantage actor–critic algorithm in multi-cloud environment.” *Expert Systems with Applications*, 2024. DOI: 10.1016/j.eswa.2024.125245. :contentReference[oaicite:0]{index=0}  
+- **PFAPPO (fairness-aware scheduling in SAGIN)**: Sun *et al.* “Proportional Fairness-Aware Task Scheduling in Space-Air-Ground Integrated Networks.” *IEEE Transactions on Services Computing*, 17(6):4125–4137, 2024. DOI: 10.1109/TSC.2024.3478730. :contentReference[oaicite:1]{index=1}  
+- **Graph-assisted offline–online DRL for dynamic workflow scheduling (GOODRL)**: Yang *et al.* “Graph Assisted Offline-Online Deep Reinforcement Learning for Dynamic Workflow Scheduling.” *ICLR 2025*. :contentReference[oaicite:2]{index=2}  
+
+### Transformer / Tracking / Routing
+- **Equity-Transformer (min–max routing)**: Son *et al.* “Equity-Transformer: Solving NP-hard Min-Max Routing Problems as Sequential Generation with Equity Context.” arXiv:2306.02689 (AAAI 2024 version noted on arXiv). DOI: 10.48550/arXiv.2306.02689. :contentReference[oaicite:3]{index=3}  
+- **STARK (spatio-temporal transformer tracking)**: Yan *et al.* “Learning Spatio-Temporal Transformer for Visual Tracking.” *ICCV 2021*, pp. 10448–10457. :contentReference[oaicite:4]{index=4}  
+
+### PPO variants / Exploration
+- **Colored Noise in PPO (correlated action sampling)**: Hollenstein *et al.* “Colored Noise in PPO: Improved Exploration and Performance through Correlated Action Sampling.” arXiv:2312.11091 (also appears as an AAAI paper per bibliographic indexes). :contentReference[oaicite:5]{index=5}  
+
+### Foundational algorithms (if used)
+- **A3C (original)**: Mnih *et al.* “Asynchronous Methods for Deep Reinforcement Learning.” arXiv:1602.01783 / ICML 2016. :contentReference[oaicite:6]{index=6}  
+- **PPO (original)**: Schulman *et al.* “Proximal Policy Optimization Algorithms.” arXiv:1707.06347, 2017. :contentReference[oaicite:7]{index=7}  
+
+> Note: If this repository reuses any third-party code/models, please also follow the corresponding licenses and provide code-level attribution (e.g., NOTICE file, link to the original repository, and explicit description of reused components).
+
+
+@article{Tang2024MCWSA3C,
+  title   = {Workflow scheduling based on asynchronous advantage actor--critic algorithm in multi-cloud environment},
+  author  = {Tang, Xuhao and Liu, Fagui and Wang, Bin and Xu, Dishi and Jiang, Jun and Wu, Qingbo and Chen, C. L. Philip},
+  journal = {Expert Systems with Applications},
+  year    = {2024},
+  doi     = {10.1016/j.eswa.2024.125245}
+}
+
+@article{Sun2024PFAPPO,
+  title   = {Proportional Fairness-Aware Task Scheduling in Space-Air-Ground Integrated Networks},
+  author  = {Sun, Gang and Wang, Yuhui and Yu, Hongfang and Guizani, Mohsen},
+  journal = {IEEE Transactions on Services Computing},
+  volume  = {17},
+  number  = {6},
+  pages   = {4125--4137},
+  year    = {2024},
+  doi     = {10.1109/TSC.2024.3478730}
+}
+
+@inproceedings{Yan2021STARK,
+  title     = {Learning Spatio-Temporal Transformer for Visual Tracking},
+  author    = {Yan, Bin and Peng, Houwen and Fu, Jianlong and Wang, Dong and Lu, Huchuan},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages     = {10448--10457},
+  year      = {2021}
+}
+
+@misc{Son2024EquityTransformer,
+  title         = {Equity-Transformer: Solving NP-hard Min-Max Routing Problems as Sequential Generation with Equity Context},
+  author        = {Son, Jiwoo and Kim, Minsu and Choi, Sanghyeok and Kim, Hyeonah and Park, Jinkyoo},
+  year          = {2024},
+  eprint        = {2306.02689},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  doi           = {10.48550/arXiv.2306.02689}
+}
+
+@misc{Hollenstein2023ColoredNoisePPO,
+  title         = {Colored Noise in PPO: Improved Exploration and Performance through Correlated Action Sampling},
+  author        = {Hollenstein, Jakob and Martius, Georg and Piater, Justus},
+  year          = {2023},
+  eprint        = {2312.11091},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}
+
+@inproceedings{Yang2025GOODRL,
+  title     = {Graph Assisted Offline-Online Deep Reinforcement Learning for Dynamic Workflow Scheduling},
+  author    = {Yang, Yifan and Chen, Gang and Ma, Hui and Zhang, Cong and Cao, Zhiguang and Zhang, Mengjie},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025}
+}
+
+@misc{Mnih2016A3C,
+  title         = {Asynchronous Methods for Deep Reinforcement Learning},
+  author        = {Mnih, Volodymyr and Badia, Adria Puigdomenech and Mirza, Mehdi and Graves, Alex and Lillicrap, Timothy P. and Harley, Tim and Silver, David and Kavukcuoglu, Koray},
+  year          = {2016},
+  eprint        = {1602.01783},
+  archivePrefix = {arXiv}
+}
+
+@misc{Schulman2017PPO,
+  title         = {Proximal Policy Optimization Algorithms},
+  author        = {Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  year          = {2017},
+  eprint        = {1707.06347},
+  archivePrefix = {arXiv}
+}
+
+
+
+
 ## Contact
 
 For any questions regarding the code or to request the **full dataset**, please email:  
