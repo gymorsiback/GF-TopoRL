@@ -1,6 +1,6 @@
 <div align="center">
 
-# TopoFreeRL: Topology-Free Reinforcement Learning for MoE Inference Scheduling
+# TopoFreeRL: Topology-Free Reinforcement Learning for Distributed LLM Inference
 
 <!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
